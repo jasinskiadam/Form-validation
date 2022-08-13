@@ -21,11 +21,34 @@ body {
     Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-input {
-  font-size:20px
+input, select {
+  font-size:16px;
+  background-color: #121212;
+  color: whitesmoke;
+  border: 1px solid #4a5568;
+  border-radius: 2px;
+  outline: none;
+  padding: 5px;
+
+  &:focus {
+    border: 2px solid #555;
+  }
+}
+
+button {
+  background-color: #bb86fc;
+  &:hover {
+    background-color: #bb86fcc7;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.error{
+  color:red;
 }
 
 ::-webkit-calendar-picker-indicator {
-  filter: invert(0.2);
+  filter: invert(0.5);
 }
 `;
