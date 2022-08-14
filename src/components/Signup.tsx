@@ -1,5 +1,4 @@
 import { Formik, Field, FieldArray, Form, ErrorMessage } from 'formik';
-
 import { SignInSchema } from '../utils/validationSchema';
 import styled from 'styled-components';
 
@@ -33,7 +32,7 @@ const Signup = () => {
           }, 500);
         }}
       >
-        {({ errors, values, touched, isSubmitting }) => (
+        {({ values }) => (
           <Form>
             <FormWrapper>
               <label htmlFor='firstName'>First Name</label>
