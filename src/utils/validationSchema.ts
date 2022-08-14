@@ -3,8 +3,8 @@ import * as Yup from 'yup';
 const AddressSchema = Yup.object().shape({
   //shortest country names:  Chad, Cuba, Iran... 
   //longest country name: The United Kingdom of Great Britain and Northern Ireland
-  country: Yup.string().min(4, 'Enter a real country!').max(56, 'Is this a real country?'),
-  city: Yup.string().min(1, 'Enter a real city!').required('City is required'),
+  country: Yup.string().min(4, 'Enter a real country!').max(56, 'Is this a real country?').required('Country is required'),
+  city: Yup.string().min(1, 'Enter a real city!').max(50, 'Is this a real country?').required('City is required'),
 });
 
 export const SignInSchema = Yup.object().shape({
